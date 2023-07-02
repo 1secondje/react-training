@@ -1,70 +1,23 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Description:
+The "Post List with Search, Filtering, Adding New Posts, Infinite Scroll, and Fake Authentication using React Context" is an educational project developed using React, JSONPlaceholder API, fake authentication logic, and React Context. The project aims to provide hands-on experience with React development concepts, working with external APIs, implementing interactive features, infinite scrolling to load posts as the user scrolls, and using React Context to manage application state.
 
-## Available Scripts
+### Tools and Concepts Used:
 
-In the project directory, you can run:
+React: The project is built using the React library to create a component-based interface.
+useState: The useState hook is used to manage component state, including the list of posts, filters, authentication data, and other local states.
+useEffect: The useEffect hook is used to perform side effects such as fetching data from APIs, updating the list of posts, and registering event handlers.
+useRef: The useRef hook allows the creation of references to DOM elements or other values that persist between component renders.
+JSONPlaceholder API: The project utilizes the JSONPlaceholder API to retrieve post data. The API provides a fake RESTful API with test data.
+react-router-dom: The react-router-dom library is used to implement navigation between different pages of the application.
+React Context: React Context is used to manage global application state, including authentication data and other shared data that needs to be passed between components.
+Features:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The main page displays a list of posts fetched from the JSONPlaceholder API in the form of cards. Each card contains information about the post's title and content.
+Users can perform searches on posts based on the title or content. As the user types in the search field, the list of posts automatically updates to display only the relevant results.
+Filters are added for categories (e.g., by category) to refine the results. Users can select a filter, and the list of posts updates accordingly, showing only the posts that match the selected parameters.
+Users can add new posts using a form. The form allows input for the post's title and content. After submitting the form, a new post is added to the list and displayed on the main page.
+Fake authentication logic is implemented, allowing users to simulate logging into the application. Users can enter their credentials, and if they are correct, access to the application's functionality is granted.
+Infinite scrolling is implemented, automatically loading new posts as the user scrolls down the page. This allows users to browse a large amount of content without having to manually reload the page or click a "Load More" button.
+React Context is used to pass shared data, such as authentication data and other global states, between components without explicit prop passing.
+This educational project provides an opportunity to explore fundamental React concepts, useState, useEffect, useRef hooks, working with external APIs, implementing search, filtering, adding new posts, fake authentication logic, infinite scrolling, and using React Context to manage global application state.
